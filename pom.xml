@@ -1,22 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.openmrs.content</groupId>
-	<artifactId>referenceapplication-demo</artifactId>
-	<version>1.1.0-SNAPSHOT</version>
-	<name />
+	<artifactId>paradygm-emr-content-package</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>Paradygm EMR Content package</name>
 	<packaging>pom</packaging>
+
 	<developers>
 		<developer>
-			<name>OpenMRS</name>
-			<organization>OpenMRS</organization>
-			<organizationUrl>http://openmrs.org</organizationUrl>
+			<name>Paradygm</name>
+			<organization>Paradygm</organization>
+			<organizationUrl>https://github.com/Paradgym</organizationUrl>
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:git@github.com:openmrs/openmrs-content-referenceapplication-demo.git</connection>
-		<developerConnection>scm:git:git@github.com:openmrs/openmrs-content-referenceapplication-demo.git</developerConnection>
-		<url>https://github.com/openmrs/openmrs-content-referenceapplication-demo.git</url>
-	  <tag>HEAD</tag>
+		<connection>scm:git:git@github.com:Paradgym/openmrs-content-paradygm.git</connection>
+		<developerConnection>scm:git:git@github.com:Paradgym/openmrs-content-paradygm.git</developerConnection>
+		<url>https://github.com/Paradgym/openmrs-content-paradygm.git</url>
   </scm>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -163,14 +163,14 @@
 	</pluginRepositories>
 	<distributionManagement>
 		<repository>
-			<id>openmrs-repo-modules</id>
-			<name>OpenMRS Nexus Modules</name>
-			<url>http://mavenrepo.openmrs.org/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>openmrs-repo-snapshots</id>
-			<name>OpenMRS Nexus Snapshots</name>
-			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
+			<id>paradygm-emr-content-package</id>
+        	<name>Paradygm repo for content packages releases</name>
+        	<url>https://maven.pkg.github.com/Paradgym/openmrs-content-paradygm</url>
+    	</repository>
+    	<snapshotRepository>
+			<id>paradygm-emr-content-package</id>
+        	<name>Paradgym repo for content packages snapshots</name>
+        	<url>https://maven.pkg.github.com/Paradgym/openmrs-content-paradygm</url>
+    	</snapshotRepository>
 	</distributionManagement>
 </project>
