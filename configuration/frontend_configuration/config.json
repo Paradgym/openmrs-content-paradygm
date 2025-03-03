@@ -3,7 +3,7 @@
     "restrictByVisitLocationTag": true,
     "showUpcomingAppointments": true,
     "logo": {
-      "src": "./Logo_Black.png",
+      "src": "${openmrsSpaBase}/Logo_Black.png",
       "alt": "Logo"
     },
     "extensionSlots": {
@@ -51,18 +51,18 @@
     "defaultFacilityUrl": ""
   },
   "@openmrs/esm-styleguide": {
-    "Brand color #1": "#005d5d"
+    "Brand color #1": "#1b1f23"
   },
   "@openmrs/esm-login-app": {
     "logo": {
-      "src": "./Logo_Black.png",
+      "src": "${openmrsSpaBase}/Logo_Black.png",
       "alt": "Logo"
     }
   },
   "@openmrs/esm-primary-navigation-app": {
     "logo": {
-      "src": "./Logo_white.png",
+      "src": "${openmrsSpaBase}/Logo_white.png",
       "alt": "Logo"
     }
-  },
+  }
 }
