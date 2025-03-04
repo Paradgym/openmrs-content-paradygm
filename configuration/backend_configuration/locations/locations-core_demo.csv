@@ -1,5 +1,5 @@
-Uuid,Void/Retire,Name,Description,Parent,Tag,Tag|Visit Location,Tag|Facility Location,Tag|Queue Location,Tag|Admission Location,Tag|Transfer Location,Address 1,Address 2,Address 3,Address 4,Address 5,Address 6,City/Village,County/District,State/Province,Postal Code,Country,_order:1000
-3cbe4992-087e-4883-a1ea-7e4b9a7c1aff,,Paradgym Clinic,Stem cell Hospital,,Login Location,TRUE,TRUE,TRUE,TRUE,TRUE,,,,,,,,,,,,
-2582a887-d9c2-4adb-913c-ef4378dc9f32,,Phantom Clinic,Mobile clinic,,Login Location,TRUE,TRUE,TRUE,TRUE,TRUE,,,,,,,,,,,,
-ff7bd268-98d2-42cc-844c-238c01faac8b,,Stem Clinic,Moving clinic,,Login Location,TRUE,TRUE,TRUE,TRUE,TRUE,,,,,,,,,,,,
-86191bf1-4908-407c-90cc-aacd187208a5,,Community Clinic,Outreach clinic,,Login Location,TRUE,TRUE,TRUE,TRUE,TRUE,,,,,,,,,,,,
+Uuid,Void/Retire,Name,Description,Parent,Tag/Login Location,Tag|Visit Location,Tag|Facility Location,Tag|Queue Location,Tag|Admission Location,Tag|Transfer Location,Address 1,Address 2,Address 3,Address 4,Address 5,Address 6,City/Village,County/District,State/Province,Postal Code,Country,_order:1000
+3cbe4992-087e-4883-a1ea-7e4b9a7c1aff,,Paradgym Clinic,Stem cell Hospital,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,,,,,,,,,,,
+2582a887-d9c2-4adb-913c-ef4378dc9f32,,Phantom Clinic,Mobile clinic,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,,,,,,,,,,,
+ff7bd268-98d2-42cc-844c-238c01faac8b,,Stem Clinic,Moving clinic,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,,,,,,,,,,,
+86191bf1-4908-407c-90cc-aacd187208a5,,Community Clinic,Outreach clinic,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,,,,,,,,,,,
