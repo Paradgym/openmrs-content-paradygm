@@ -3,7 +3,7 @@
     "restrictByVisitLocationTag": true,
     "showUpcomingAppointments": true,
     "logo": {
-      "src": "${openmrsSpaBase}/Logo_white.png",
+      "src": "${openmrsSpaBase}/nav-logo.png",
       "alt": "Logo"
     },
     "extensionSlots": {
@@ -56,13 +56,13 @@
   },
   "@openmrs/esm-login-app": {
     "logo": {
-      "src": "${openmrsSpaBase}/Logo_Black.png",
+      "src": "${openmrsSpaBase}/logo.png",
       "alt": "Logo"
     }
   },
   "@openmrs/esm-primary-navigation-app": {
     "logo": {
-      "src": "${openmrsSpaBase}/Logo_white.png",
+      "src": "${openmrsSpaBase}/nav-logo.png",
       "alt": "Logo"
     }
   }
