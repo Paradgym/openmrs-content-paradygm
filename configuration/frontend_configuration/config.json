@@ -65,5 +65,8 @@
       "src": "${openmrsSpaBase}/nav-logo.png",
       "alt": "Logo"
     }
+  },
+  "@openmrs/esm-billing-app": {
+    "defaultCurrency": "USD"
   }
 }

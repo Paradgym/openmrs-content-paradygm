@@ -1,2 +1,2 @@
 Uuid,Void/Retire,Identifier type,Name,Description,Prefix,Suffix,First identifier base,Min length,Max length,Base character set,_version:1,_order:6000
-e1e4fc09-4dbc-4a70-8ada-9568d9872aa8,,PARADYGM ID,Generator for PARADYGM ID,Generator for PARADYGM ID,PDG-,,1,1,16,123456789,,
+353a7766-274e-4b23-b7cc-6e97febeddb7,,PARADYGM Global ID,Generator for OpenMRS ID,Generator for OpenMRS ID,PDG,,1,1,16,0123456789,,
