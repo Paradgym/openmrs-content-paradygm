@@ -1,0 +1,50 @@
+<config>
+    <comment>
+        Disabling default filters in the datafilter Module.
+    </comment>
+    <globalProperties>
+
+        <globalProperty>
+            <property>datafilter_encTypePrivBasedEncounterFilter.disabled</property>
+            <value>true</value>
+            <description>
+                Encounter based observation filter. To enable, set value to false
+            </description>
+        </globalProperty>
+        <globalProperty>
+            <property>datafilter_encTypePrivBasedObsFilter.disabled</property>
+            <value>true</value>
+            <description>
+                Encounter based observation filter. To enable, set value to false
+            </description>
+        </globalProperty>
+        <globalProperty>
+            <property>datafilter_encTypePrivBasedDiagnosisFilter.disabled</property>
+            <value>true</value>
+            <description>
+                Encounter based observation filter. To enable, set value to false
+            </description>
+        </globalProperty>
+        <globalProperty>
+            <property>datafilter_encTypePrivBasedConditionFilter.disabled</property>
+            <value>true</value>
+            <description>
+                Encounter based observation filter. To enable, set value to false
+            </description>
+        </globalProperty>
+        <globalProperty>
+            <property>datafilter_encTypePrivBasedEncounterFilter.disabled</property>
+            <value>true</value>
+            <description>
+                Encounter based observation filter. To enable, set value to false
+            </description>
+        </globalProperty>
+        <globalProperty>
+            <property>datafilter_encTypePrivBasedEncounterTypeFilter.disabled</property>
+            <value>true</value>
+            <description>
+                Encounter based observation filter. To enable, set value to false
+            </description>
+        </globalProperty>
+    </globalProperties>
+</config>
