@@ -62,7 +62,7 @@
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationBasedObsFilter.disabled</property>
-            <value>false</value>
+            <value>true</value>
             <description>
                 Location based observation filter. To enable, set value to false
             </description>
@@ -83,7 +83,7 @@
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationBasedProviderFilter.disabled</property>
-            <value>true</value>
+            <value>false</value>
             <description>
                 Location based provider filter. To enable, set value to false
             </description>
