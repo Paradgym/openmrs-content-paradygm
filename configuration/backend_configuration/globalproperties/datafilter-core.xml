@@ -1,14 +1,10 @@
 <config>
-    <comment>
-        Disabling default filters in the datafilter Module.
-    </comment>
     <globalProperties>
-
         <globalProperty>
             <property>datafilter_encTypePrivBasedEncounterFilter.disabled</property>
             <value>true</value>
             <description>
-                Encounter based observation filter. To enable, set value to false
+                Encounter based privilage filter. To enable, set value to false
             </description>
         </globalProperty>
         <globalProperty>
@@ -22,28 +18,35 @@
             <property>datafilter_encTypePrivBasedDiagnosisFilter.disabled</property>
             <value>true</value>
             <description>
-                Encounter based observation filter. To enable, set value to false
+                Encounter based Diagnosis filter. To enable, set value to false
             </description>
         </globalProperty>
         <globalProperty>
             <property>datafilter_encTypePrivBasedConditionFilter.disabled</property>
             <value>true</value>
             <description>
-                Encounter based observation filter. To enable, set value to false
+                Encounter based Condition filter. To enable, set value to false
             </description>
         </globalProperty>
         <globalProperty>
             <property>datafilter_encTypePrivBasedEncounterFilter.disabled</property>
             <value>true</value>
             <description>
-                Encounter based observation filter. To enable, set value to false
+                Encounter based filter. To enable, set value to false
             </description>
         </globalProperty>
         <globalProperty>
-            <property>datafilter_encTypePrivBasedEncounterTypeFilter.disabled</property>
+            <property>datafilter_programBasedUserFilter.disabled</property>
             <value>true</value>
             <description>
-                Encounter based observation filter. To enable, set value to false
+                Program based filter. To enable, set value to false
+            </description>
+        </globalProperty>
+        <globalProperty>
+            <property>datafilter_programBasedProviderFilter.disabled</property>
+            <value>true</value>
+            <description>
+                Provider based filter. To enable, set value to false
             </description>
         </globalProperty>
     </globalProperties>
