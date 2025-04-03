@@ -62,7 +62,7 @@
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationBasedObsFilter.disabled</property>
-            <value>true</value>
+            <value>false</value>
             <description>
                 Location based observation filter. To enable, set value to false
             </description>
