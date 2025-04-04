@@ -55,7 +55,7 @@
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationBasedEncounterFilter.disabled</property>
-            <value>true</value>
+            <value>false</value>
             <description>
                 Location based encounter filter. To enable, set value to false
             </description>
