@@ -90,7 +90,7 @@
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationFilter.disabled</property>
-            <value>true</value>
+            <value>false</value>
             <description>
                 Location based filter. To enable, set value to false
             </description>
