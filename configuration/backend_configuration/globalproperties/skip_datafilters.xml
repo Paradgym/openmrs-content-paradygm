@@ -62,21 +62,21 @@
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationBasedObsFilter.disabled</property>
-            <value>false</value>
+            <value>true</value>
             <description>
                 Location based observation filter. To enable, set value to false
             </description>
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationBasedPatientFilter.disabled</property>
-            <value>false</value>
+            <value>true</value>
             <description>
                 Location based patient filter. To enable, set value to false
             </description>
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationBasedUserFilter.disabled</property>
-            <value>false</value>
+            <value>true</value>
             <description>
                 Location based user filter. To enable, set value to false
             </description>
@@ -90,21 +90,21 @@
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationFilter.disabled</property>
-            <value>false</value>
+            <value>true</value>
             <description>
                 Location based filter. To enable, set value to false
             </description>
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationBasedDiagnosisFilter.disabled</property>
-            <value>false</value>
+            <value>true</value>
             <description>
                 Location based diagnosis filter. To enable, set value to false
             </description>
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationBasedConditionFilter.disabled</property>
-            <value>false</value>
+            <value>true</value>
             <description>
                 Location based condition filter. To enable, set value to false
             </description>
