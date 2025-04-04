@@ -48,7 +48,7 @@
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationBasedVisitFilter.disabled</property>
-            <value>false</value>
+            <value>true</value>
             <description>
                 Location based visit filter. To enable, set value to false
             </description>
@@ -76,7 +76,7 @@
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationBasedUserFilter.disabled</property>
-            <value>true</value>
+            <value>false</value>
             <description>
                 Location based user filter. To enable, set value to false
             </description>
