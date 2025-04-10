@@ -41,7 +41,7 @@
         </globalProperty>
         <globalProperty>
             <property>datafilter_encTypePrivBasedEncounterTypeFilter.disabled</property>
-            <value>false</value>
+            <value>true</value>
             <description>
                 Encounter-type based encounter-type filter. To enable, set value to false
             </description>
