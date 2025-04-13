@@ -1,0 +1,697 @@
+{
+  "name": "Wound treatment default",
+  "pages": [
+    {
+      "label": "Encounter Information",
+      "sections": [
+        {
+          "label": "Details ",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "21eced40-aa0d-47a7-bb9a-a5a3fc51a184"
+              },
+              "id": "dateOfBirth",
+              "label": "Date",
+              "datePickerFormat": "both"
+            },
+            {
+              "type": "encounterLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "location",
+              "label": "Location"
+            },
+            {
+              "type": "encounterProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "provider",
+              "label": "Provider"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "ui-select-extended",
+                "concept": "SNOMED CT:373066001"
+              },
+              "id": "consent",
+              "label": "Consent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Vitals",
+      "sections": [
+        {
+          "label": "Biometrics",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5085"
+              },
+              "id": "bloodPressure",
+              "label": "Blood Pressure"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5087"
+              },
+              "id": "hr",
+              "label": "HR"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5092"
+              },
+              "id": "sop2",
+              "label": "SPO2"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5242"
+              },
+              "id": "respiratoryRaate",
+              "label": "RR"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5088"
+              },
+              "id": "temperature",
+              "label": "Temperature"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Wound bed Assessment",
+      "sections": [
+        {
+          "label": "Assessment",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:161629"
+              },
+              "id": "woundLocation",
+              "label": "Wound Location"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "ui-select-extended",
+                "concept": "PIH Malawi:3780",
+                "isSearchable": true
+              },
+              "id": "typeOfWound",
+              "label": "Type of Wound"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "CIEL:163648",
+                "answers": [
+                  {
+                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Negative"
+                  },
+                  {
+                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "One plus"
+                  },
+                  {
+                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Three plus"
+                  },
+                  {
+                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Two plus"
+                  }
+                ]
+              },
+              "id": "woundStage",
+              "label": "Wound Stage"
+            }
+          ]
+        },
+        {
+          "label": "Pre-debridement Dimensions (cm)",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5090"
+              },
+              "id": "length",
+              "label": "Length"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5090"
+              },
+              "id": "width",
+              "label": "Width"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5090"
+              },
+              "id": "depth",
+              "label": "Depth"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "CIEL:163648",
+                "answers": [
+                  {
+                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Negative"
+                  },
+                  {
+                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "One plus"
+                  }
+                ]
+              },
+              "id": "woundDepth",
+              "label": "Wound Depth"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "CIEL:163648",
+                "answers": [
+                  {
+                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Three plus"
+                  },
+                  {
+                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "One plus"
+                  },
+                  {
+                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Negative"
+                  },
+                  {
+                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Two plus"
+                  }
+                ]
+              },
+              "id": "exudateAmount",
+              "label": "Exudate Amount"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "CIEL:163648",
+                "answers": [
+                  {
+                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Negative"
+                  },
+                  {
+                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "One plus"
+                  },
+                  {
+                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Three plus"
+                  }
+                ]
+              },
+              "id": "exudentConsistency",
+              "label": "Exudent Consistency"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "CIEL:163648",
+                "answers": [
+                  {
+                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Three plus"
+                  },
+                  {
+                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "One plus"
+                  }
+                ]
+              },
+              "id": "swellingEdema",
+              "label": "Swelling Edema"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "CIEL:163648",
+                "answers": [
+                  {
+                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Negative"
+                  },
+                  {
+                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "One plus"
+                  }
+                ]
+              },
+              "id": "painTenderness",
+              "label": "Pain Tenderness"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "AMPATH:5970"
+              },
+              "id": "granulationTissue",
+              "label": "Granulation Tissue"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:730"
+              },
+              "id": "necroticTissues",
+              "label": "Necrotic Tissues"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:165095"
+              },
+              "id": "additionalNotes",
+              "label": "Additional Notes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Pre-treatment Images",
+      "sections": [
+        {
+          "label": "Attachments",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "file",
+                "concept": "7cac8397-53cd-4f00-a6fe-028e8d743f8e"
+              },
+              "id": "photographs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Procedure Details",
+      "sections": [
+        {
+          "label": "Debridement",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:165095"
+              },
+              "id": "techniqueUsed",
+              "label": "Technique Used "
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "CIEL:163648",
+                "answers": [
+                  {
+                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Three plus"
+                  },
+                  {
+                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Two plus"
+                  }
+                ]
+              },
+              "id": "procedure",
+              "label": "Procedure"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Post-Debridement Assessment",
+      "sections": [
+        {
+          "label": "Post-debridement dimenstions (cm)",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5090"
+              },
+              "id": "postLength",
+              "label": "Length"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5090"
+              },
+              "id": "postWidth",
+              "label": "Width"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5090"
+              },
+              "id": "postDepth",
+              "label": "Depth"
+            }
+          ]
+        },
+        {
+          "label": "Estimated Blood loss",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:851"
+              },
+              "id": "cc",
+              "label": "CC"
+            }
+          ]
+        },
+        {
+          "label": "Homostasis",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "CIEL:163648",
+                "answers": [
+                  {
+                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Two plus"
+                  },
+                  {
+                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Three plus"
+                  }
+                ]
+              },
+              "id": "hemostasis",
+              "label": "Hemostasis"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:163042"
+              },
+              "id": "hemostasisArchieved",
+              "label": "Hemostasis Archieved"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:161627"
+              },
+              "id": "graaftTypeUsed",
+              "label": "Graft type Used"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:78809"
+              },
+              "id": "graftApplied",
+              "label": "Graft applied"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:165171"
+              },
+              "id": "graftTotalWaste",
+              "label": "Graft total waste"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "CIEL:163648",
+                "answers": [
+                  {
+                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Three plus"
+                  },
+                  {
+                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Two plus"
+                  }
+                ]
+              },
+              "id": "painDuringProcedure",
+              "label": "Pain during Procedure"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "CIEL:165095"
+              },
+              "id": "procedureNotes",
+              "label": "Procedure Notes"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "CIEL:163648",
+                "answers": [
+                  {
+                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Negative"
+                  },
+                  {
+                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Three plus"
+                  },
+                  {
+                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "One plus"
+                  },
+                  {
+                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Two plus"
+                  }
+                ]
+              },
+              "id": "dressingApplied",
+              "label": "Dressing Applied "
+            }
+          ]
+        },
+        {
+          "label": "Post-Debridement Images",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "file",
+                "concept": "7cac8397-53cd-4f00-a6fe-028e8d743f8e"
+              },
+              "id": "postDebridementImages",
+              "label": ""
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "fa8fedc0-c066-4da3-8dc1-2ad8621fc480"
+              },
+              "id": "notes",
+              "label": "Notes"
+            }
+          ]
+        },
+        {
+          "label": "Frequency of Bandage Changes ",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "163648AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Negative"
+                  },
+                  {
+                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "One plus"
+                  },
+                  {
+                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Three plus"
+                  },
+                  {
+                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Two plus"
+                  }
+                ]
+              },
+              "id": "bandageChanges",
+              "label": "Bandage Changes "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Education and Care Instructions",
+      "sections": [
+        {
+          "label": "Care Instructions",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "CIEL:162202",
+                "answers": [
+                  {
+                    "concept": "1138AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Indeterminate"
+                  },
+                  {
+                    "concept": "163611AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Invalid"
+                  },
+                  {
+                    "concept": "1302AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Not detected"
+                  },
+                  {
+                    "concept": "1301AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Detected"
+                  }
+                ]
+              },
+              "id": "careInstructions",
+              "label": "Care Instructions"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "fa8fedc0-c066-4da3-8dc1-2ad8621fc480"
+              },
+              "id": "careNotes",
+              "label": "Additional Notes"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "file",
+                "concept": "7cac8397-53cd-4f00-a6fe-028e8d743f8e"
+              },
+              "id": "labelOfGrafts",
+              "label": "Labels of Grafts applied"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Next Visit",
+      "sections": [
+        {
+          "label": "Appointment Date",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "id": "nextAppointment",
+              "datePickerFormat": "calendar",
+              "label": "Next Appointment date "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "ca3aed11-1aa4-42a1-b85c-8332fc8001fc",
+  "referencedForms": [],
+  "uuid": "94267b93-a36e-4495-a873-90880d42339a",
+  "description": "Paradygm EMR Wound Treatment and Debridement Form",
+  "version": "1.0"
+}
