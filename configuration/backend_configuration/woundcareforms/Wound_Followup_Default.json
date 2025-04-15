@@ -1,5 +1,5 @@
 {
-  "name": "Wound_Assessment_Default",
+  "name": "Wound_Followup_Default_form",
   "uuid": "991da845-b3d1-4e58-baf9-e8b3072d2512",
   "description": "Paradygm EMR wound Assessment Default form",
   "version": "1",
@@ -53,15 +53,19 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "0b49e3e6-55df-4096-93ca-59edadb74b3f",
+                "concept": "CIEL:162696",
                 "answers": [
                   {
-                    "concept": "8b715fed-97f6-4e38-8f6a-c167a42f8923",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Yes"
                   },
                   {
-                    "concept": "a899e0ac-1350-11df-a1f1-0026b9348838",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "No"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
                   }
                 ]
               },
@@ -207,48 +211,6 @@
               "validators": []
             },
             {
-              "label": "MUAC:",
-              "id": "muac",
-              "questionOptions": {
-                "rendering": "number",
-                "concept": "a89c6188-1350-11df-a1f1-0026b9348838",
-                "max": "450",
-                "min": "60"
-              },
-              "type": "obs",
-              "validators": []
-            },
-            {
-              "label": "Foetal heart rate:",
-              "id": "fhr",
-              "questionOptions": {
-                "rendering": "number",
-                "concept": "a8a007a2-1350-11df-a1f1-0026b9348838",
-                "max": "230",
-                "min": "0"
-              },
-              "type": "obs",
-              "validators": [],
-              "hide": {
-                "hideWhenExpression": " !arrayContains(['02e3ce61-fa24-445e-a1f0-6e3299142966', '42de8e7e-24b2-4c16-b62b-137eb2c55ede','53b856ad-21ef-4745-9acd-81aca01bba31'], visitTypeUuid)"
-              }
-            },
-            {
-              "label": "Fundal height:",
-              "id": "fundalHeight",
-              "questionOptions": {
-                "rendering": "number",
-                "concept": "a8a005fe-1350-11df-a1f1-0026b9348838",
-                "max": "48",
-                "min": "0"
-              },
-              "type": "obs",
-              "validators": [],
-              "hide": {
-                "hideWhenExpression": " !arrayContains(['02e3ce61-fa24-445e-a1f0-6e3299142966', '42de8e7e-24b2-4c16-b62b-137eb2c55ede','53b856ad-21ef-4745-9acd-81aca01bba31'], visitTypeUuid)"
-              }
-            },
-            {
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
@@ -258,6 +220,15 @@
               },
               "id": "pain",
               "label": "Pain"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "CIEL:5242"
+              },
+              "id": "respirotaryRate",
+              "label": "RR"
             }
           ]
         }
@@ -276,15 +247,31 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "0b49e3e6-55df-4096-93ca-59edadb74b3f",
+                "concept": "CIEL:162753",
                 "answers": [
                   {
-                    "concept": "8b715fed-97f6-4e38-8f6a-c167a42f8923",
-                    "label": "Yes"
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
                   },
                   {
-                    "concept": "a899e0ac-1350-11df-a1f1-0026b9348838",
-                    "label": "No"
+                    "concept": "159468AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Physically able to work"
+                  },
+                  {
+                    "concept": "160026AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Patient ambulatory"
+                  },
+                  {
+                    "concept": "162752AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Bedridden"
+                  },
+                  {
+                    "concept": "162750AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Able to walk without assistance"
+                  },
+                  {
+                    "concept": "162751AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Able to walk with assistance"
                   }
                 ]
               },
@@ -297,15 +284,15 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "0b49e3e6-55df-4096-93ca-59edadb74b3f",
+                "concept": "6c948588-9eff-44fe-849a-a405905f8e07",
                 "answers": [
                   {
-                    "concept": "8b715fed-97f6-4e38-8f6a-c167a42f8923",
-                    "label": "Yes"
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
                   },
                   {
-                    "concept": "a899e0ac-1350-11df-a1f1-0026b9348838",
-                    "label": "No"
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
                   }
                 ]
               },
@@ -318,7 +305,7 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "0b49e3e6-55df-4096-93ca-59edadb74b3f",
+                "concept": "PIH:3722",
                 "answers": [
                   {
                     "concept": "8b715fed-97f6-4e38-8f6a-c167a42f8923",
@@ -339,14 +326,14 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "0b49e3e6-55df-4096-93ca-59edadb74b3f",
+                "concept": "633ff176-d4bb-4983-97ad-d52eea36ff74",
                 "answers": [
                   {
-                    "concept": "8b715fed-97f6-4e38-8f6a-c167a42f8923",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Yes"
                   },
                   {
-                    "concept": "a899e0ac-1350-11df-a1f1-0026b9348838",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "No"
                   }
                 ]
@@ -1197,32 +1184,6 @@
               "validators": []
             }
           ]
-        },
-        {
-          "label": "Other Lab Tests",
-          "questions": [
-            {
-              "type": "obsGroup",
-              "label": "Test result, detailed",
-              "questionOptions": {
-                "concept": "a8a00e1e-1350-11df-a1f1-0026b9348838",
-                "rendering": "group"
-              },
-              "questions": [
-                {
-                  "type": "obs",
-                  "label": "Other test results, specify:",
-                  "id": "otherTestResult",
-                  "questionOptions": {
-                    "concept": "6f5207f4-6785-433b-943e-c2d03e7d3ea7",
-                    "rendering": "text"
-                  },
-                  "validators": []
-                }
-              ],
-              "id": "__wnIpx7nxr"
-            }
-          ]
         }
       ]
     },
@@ -1254,22 +1215,22 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "0b49e3e6-55df-4096-93ca-59edadb74b3f",
+                "concept": "25e5d2e7-6267-47e1-8cc1-e8167e2cdb0b",
                 "answers": [
                   {
-                    "concept": "8b715fed-97f6-4e38-8f6a-c167a42f8923",
-                    "label": "Normal"
+                    "concept": "125201AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Swelling of Skin"
                   },
                   {
-                    "concept": "a899e0ac-1350-11df-a1f1-0026b9348838",
+                    "concept": "8fe497db-9776-4471-b765-06d278084715",
                     "label": "Redness"
                   },
                   {
-                    "concept": "a899e0ac-1350-11df-a1f1-0026b9348838",
-                    "label": "Swelling"
+                    "concept": "132681AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Normal Appearance"
                   },
                   {
-                    "concept": "a899e0ac-1350-11df-a1f1-0026b9348838",
+                    "concept": "ab0ff763-8f2e-427d-81d4-fccc337fb356",
                     "label": "Necrosis"
                   }
                 ]
@@ -1281,7 +1242,17 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "CIEL:657"
+                "concept": "CIEL:163894",
+                "answers": [
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  },
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  }
+                ]
               },
               "id": "swellingEdema",
               "label": "Swelling/Edema"
@@ -1290,15 +1261,15 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "CIEL:163648",
+                "concept": "151f9f04-de1b-4025-9464-5d58305ec306",
                 "answers": [
                   {
-                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Three plus"
+                    "concept": "163747AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Absent"
                   },
                   {
-                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Two plus"
+                    "concept": "163748AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Present"
                   }
                 ]
               },
@@ -1309,7 +1280,7 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "SNOMED CT:441689006"
+                "concept": "MSF:1992"
               },
               "id": "granulationTissue",
               "label": "Granulation Tissue"
@@ -1318,7 +1289,7 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "SNOMED CT:441689006"
+                "concept": "e4e8a173-6c32-44fd-9c39-ffe91c9402e9"
               },
               "id": "necroticTissue",
               "label": "Necrotic Tissue"
@@ -1326,12 +1297,43 @@
             {
               "type": "obs",
               "questionOptions": {
-                "rendering": "text",
-                "minLength": "",
-                "concept": "CIEL:162169"
+                "rendering": "select",
+                "concept": "c9d9ae52-720b-454a-832c-427f2c2f2e36",
+                "answers": [
+                  {
+                    "concept": "142451AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Diabetic foot ulcer"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  },
+                  {
+                    "concept": "b01a2da9-0e86-45fb-97c4-3cd786beaa88",
+                    "label": "Venous stasis ulcer of leg"
+                  }
+                ]
               },
-              "id": "additionalNotes",
-              "label": "Notes"
+              "id": "typeOfWound",
+              "label": "Type of Wound"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "9225e0c6-2324-49cd-b701-ebdb9f8659d0"
+              },
+              "id": "woundLocation",
+              "label": "Wound location"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "fa8fedc0-c066-4da3-8dc1-2ad8621fc480"
+              },
+              "id": "examNotes",
+              "label": "Exam Notes"
             }
           ]
         },
@@ -1343,9 +1345,39 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "checkbox",
-                "concept": "CIEL:162135"
+                "concept": "b2f1fcc6-95d1-48f9-91c9-9f10e3fbbacd",
+                "answers": [
+                  {
+                    "concept": "163748AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Present"
+                  },
+                  {
+                    "concept": "163747AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Absent"
+                  }
+                ]
               },
-              "id": "right"
+              "id": "right",
+              "label": "Right Present"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "34e9cbf3-8ff2-47b0-9591-62c58a687966",
+                "answers": [
+                  {
+                    "concept": "163748AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Present"
+                  },
+                  {
+                    "concept": "163747AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Absent"
+                  }
+                ]
+              },
+              "id": "leftPresent ",
+              "label": "Left Present "
             }
           ]
         },
@@ -1359,7 +1391,7 @@
                 "rendering": "number",
                 "min": "1",
                 "max": "10",
-                "concept": "CIEL:5090"
+                "concept": "02ce67eb-be1a-4f25-9317-8f91e0fcfdab"
               },
               "id": "woundDimenstions",
               "label": "Length"
@@ -1368,7 +1400,7 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "CIEL:5090",
+                "concept": "8753c8ff-08a7-4fe9-a17f-db88a3196254",
                 "min": "1",
                 "max": "10"
               },
@@ -1379,7 +1411,7 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "CIEL:5090",
+                "concept": "bbf10f7e-d1d3-447f-89a0-0edb5aa58c5d",
                 "min": "1",
                 "max": "10"
               },
@@ -1396,23 +1428,23 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "CIEL:163648",
+                "concept": "2a133cf4-46bb-4d89-9453-18442a583e23",
                 "answers": [
                   {
-                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Two plus"
+                    "concept": "56d7a431-b074-4416-97d4-39d57e15c196",
+                    "label": "Heavy"
                   },
                   {
-                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Three plus"
+                    "concept": "1499AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Moderate"
                   },
                   {
-                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "One plus"
+                    "concept": "1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "None"
                   },
                   {
-                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Negative"
+                    "concept": "da959908-ba99-45f4-ab45-b2320b02d8e9",
+                    "label": "Scant or minimal"
                   }
                 ]
               },
@@ -1423,23 +1455,19 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "CIEL:163648",
+                "concept": "f4918ec1-a493-42fb-93bf-9e0c8404ab35",
                 "answers": [
                   {
-                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Negative"
+                    "concept": "ad06c21b-c81e-43d8-a82e-e38b7a838f4b",
+                    "label": "Serous"
                   },
                   {
-                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "One plus"
+                    "concept": "e75f9b7a-8db2-4368-9a77-9823a559bb4d",
+                    "label": "Serosanguineous"
                   },
                   {
-                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Three plus"
-                  },
-                  {
-                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Two plus"
+                    "concept": "0db1f8ce-575a-43bf-9fca-58c4155d7e94",
+                    "label": "Purulent"
                   }
                 ]
               },
@@ -1460,8 +1488,22 @@
             {
               "type": "obs",
               "questionOptions": {
-                "rendering": "text",
-                "concept": "CIEL:165095"
+                "rendering": "select",
+                "concept": "521015e5-bd67-4a2d-a424-20f471abc2e7",
+                "answers": [
+                  {
+                    "concept": "ca7a9d22-cfc9-4c60-90af-17bf70699ea7",
+                    "label": "Chlorhexidine gluconate 4% soap solution"
+                  },
+                  {
+                    "concept": "3f26398a-b656-4dff-bcca-a5d311af972b",
+                    "label": "7.5% povidone iodine soap solution"
+                  },
+                  {
+                    "concept": "186d438e-98a2-4955-92dd-20781ff6ef1a",
+                    "label": "Normal saline"
+                  }
+                ]
               },
               "id": "cleansingMethod",
               "label": "Cleansing Method"
@@ -1470,23 +1512,31 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "CIEL:163648",
+                "concept": "37f68b15-22da-4bc1-80c3-0743151d69da",
                 "answers": [
                   {
-                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Negative"
+                    "concept": "a61fdf04-d702-4773-ada1-a330557782ce",
+                    "label": "Absorbent dressing"
                   },
                   {
-                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Three plus"
+                    "concept": "e1def35b-6cf0-4c76-b54b-5c6f99d41d7c",
+                    "label": "Aquacel AG"
                   },
                   {
-                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "One plus"
+                    "concept": "7e4654a3-e611-4359-9eb9-36042eaf735f",
+                    "label": "Calcium Alginate"
                   },
                   {
-                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Two plus"
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  },
+                  {
+                    "concept": "b53e2b34-7c69-490c-952b-2b7f0e7b3b84",
+                    "label": "Silver Alginate"
+                  },
+                  {
+                    "concept": "3cd10bf0-26fe-102b-80cb-0017a47871b2",
+                    "label": "Wound dressing"
                   }
                 ]
               },
@@ -1497,23 +1547,31 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "CIEL:163648",
+                "concept": "933c9d29-d162-455e-af02-59c289c2c5b1",
                 "answers": [
                   {
-                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Negative"
+                    "concept": "e4d508e1-d265-454b-aec0-cca9a29b7713",
+                    "label": "Unna Boot"
                   },
                   {
-                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "One plus"
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
                   },
                   {
-                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Three plus"
+                    "concept": "eed2a145-8f98-4f93-b6f9-2d5c79931238",
+                    "label": "off loading"
                   },
                   {
-                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Two plus"
+                    "concept": "e8f6a60b-a6f8-408f-a5b5-5e698b25589d",
+                    "label": "Non-adhesive Gauze"
+                  },
+                  {
+                    "concept": "9a2e20ba-4d72-410f-823a-462b19bcbe0d",
+                    "label": "Kerlix"
+                  },
+                  {
+                    "concept": "c34a64e6-c566-4b15-bd7f-189cb46151d8",
+                    "label": "Abdominal Dressing"
                   }
                 ]
               },
@@ -1524,23 +1582,15 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "CIEL:163648",
+                "concept": "badd0cdf-a4f0-4adb-b11f-e5cfa8b7b0d2",
                 "answers": [
                   {
-                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Negative"
+                    "concept": "8bda3a3f-505e-4da2-a825-750e4c480402",
+                    "label": "Elastic Ace bandage"
                   },
                   {
-                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "One plus"
-                  },
-                  {
-                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Three plus"
-                  },
-                  {
-                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Two plus"
+                    "concept": "2cb7bc56-914f-40f8-9c95-ed01150180e6",
+                    "label": "Compression Dressing"
                   }
                 ]
               },
@@ -1591,10 +1641,37 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "checkbox",
-                "concept": "CIEL:1685"
+                "concept": "e2124576-e65b-4f5b-a356-45bba1555a5c",
+                "answers": [
+                  {
+                    "concept": "0f609ab8-cb0f-4b94-b499-eb19a2b98151",
+                    "label": "Education on signs and symptoms of infection"
+                  },
+                  {
+                    "concept": "88cff842-983e-4c72-bb4e-115f8c35e521",
+                    "label": "Education on importance of smoking cessation"
+                  },
+                  {
+                    "concept": "38ee80b9-4fe9-4bec-a41b-c10cc9aec195",
+                    "label": "Education on glucose control and diabetic diet"
+                  },
+                  {
+                    "concept": "03724124-bdeb-4771-b729-95f0ca5ca87a",
+                    "label": "Education on adherence to wound protocols as previously discussed."
+                  }
+                ]
               },
               "id": "educationProvided",
               "label": "Education Provided"
+            },
+            {
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "fa8fedc0-c066-4da3-8dc1-2ad8621fc480"
+              },
+              "id": "additionalNotes",
+              "label": "Additional Notes"
             }
           ]
         }
