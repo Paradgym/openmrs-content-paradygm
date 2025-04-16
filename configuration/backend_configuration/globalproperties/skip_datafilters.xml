@@ -76,7 +76,7 @@
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationBasedUserFilter.disabled</property>
-            <value>true</value>
+            <value>false</value>
             <description>
                 Location based user filter. To enable, set value to false
             </description>
@@ -90,7 +90,7 @@
         </globalProperty>
         <globalProperty>
             <property>datafilter_locationFilter.disabled</property>
-            <value>true</value>
+            <value>false</value>
             <description>
                 Location based filter. To enable, set value to false
             </description>
