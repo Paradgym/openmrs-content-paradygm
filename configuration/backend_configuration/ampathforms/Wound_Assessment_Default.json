@@ -1,8 +1,17 @@
 {
   "name": "Wound_Assessment_Default_Form",
+  "uuid": "9f8f6def-8676-4e9f-b508-e2c85d86ee71",
+  "description": "Paradygm EMR Initial wound care assessment form",
+  "version": "1.0",
+  "published": true,
+  "retired": false,
+  "encounter": "Adult Visit",
+  "processor": "EncounterFormProcessor",
+  "encounterType": "ca3aed11-1aa4-42a1-b85c-8332fc8001fc",
+  "referencedForms": [],
   "pages": [
     {
-      "label": "Ecounter Detaills ",
+      "label": "Encounter Details ",
       "sections": [
         {
           "label": "Visit details ",
@@ -1360,11 +1369,5 @@
         }
       ]
     }
-  ],
-  "processor": "EncounterFormProcessor",
-  "encounterType": "ca3aed11-1aa4-42a1-b85c-8332fc8001fc",
-  "referencedForms": [],
-  "uuid": "9f8f6def-8676-4e9f-b508-e2c85d86ee71",
-  "description": "Paradygm EMR Initial wound care assessment form",
-  "version": "1.0"
+  ]
 }
